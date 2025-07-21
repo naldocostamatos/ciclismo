@@ -1,0 +1,210 @@
+/*RESET E BASE*/
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box; scroll-behavior: smooth;
+}
+body {
+    background-color: #f3e8b8;
+    font-family:serif ;
+    color: #222;
+    line-height: 1.6;
+}
+/*HEADER E NAVEGAÇAO*/
+ header{
+    background-color: #003366;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+ }
+
+ nav {
+    max-width: 1100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu li a {
+    color:#bc6c25;;
+    text-decoration:rgb(240, 167, 115);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+    justify-content: center;
+    text-align: center;
+
+   
+}
+.menu li a:hover {
+
+    background-color: #ffcc00;
+    color: #000;
+}
+/*MAIN E SEÇÕES*/
+main {
+padding:40px 20px;
+}
+.secao {
+max-width: 1000px;
+margin:60px auto;
+background: #fff;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+}
+
+.secao h1
+.secao h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+.secao ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+
+/*Galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.imagem1 {
+height: 500px;
+width: 100%;
+object-fit: cover;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 300px;
+    border: 10px;
+    object-fit: cover;
+}
+
+/*Formulário*/
+form{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+form input,
+form textarea {
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 16px;
+width: 100%;
+}
+
+form button {
+background-color: #003366;
+color: #fff;
+padding: 12px;
+font-size: 16px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+form button:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* FOOTER */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align:right;
+  padding: 20px;
+  margin-top: 60px;
+
+}
+.link {
+    color: aliceblue;   
+    text-align: right;
+}
+.rodape {
+text-align: right;
+
+}
+
+
+
+
+
+
+/* ------------------------- */
+/* 📱 CELULAR: até 767px */
+@media (max-width: 767px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .secao {
+    margin: 30px 10px;
+    padding: 20px;
+  }
+
+  .galeria img {
+    max-width: 90%;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 15px;
+  }
+}
+
+/* 📱 TABLET: 768px até 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    gap: 15px;
+  }
+
+  .secao {
+    margin: 40px auto;
+    padding: 25px;
+  }
+
+  .galeria {
+    gap: 10px;
+  }
+
+  .galeria img {
+    max-width: 45%;
+  }
+}
+
+/* 💻 DESKTOP: acima de 1025px */
+@media (min-width: 1025px) {
+  .menu {
+    gap: 25px;
+  }
+
+  .galeria img {
+    max-width: 300px;
+  }
+}
+
+
